@@ -1,0 +1,12 @@
+export interface ApiError {
+  code: string;
+  message: string;
+}
+
+export interface ApiResponse<T> {
+  data: T;
+}
+
+export interface ApiErrorResponse {
+  error: ApiError;
+}
